@@ -1,0 +1,11 @@
+<!-- Locally created launch file for Kinect on this robot. -xlz -->
+<launch>    
+  <param name="/head_mount_kinect/driver/data_skip" value="1" />
+  <include file="$(find openni_launch)/launch/openni.launch">
+    <arg name="camera" value="head_mount_kinect"/>
+    <arg name="depth_registration" value="true"/>
+    <arg name="depth_frame_id" value="/head_mount_kinect_ir_optical_frame"/>
+    <arg name="publish_tf" value="false"/>
+    <arg name="rgb_frame_id" value="/head_mount_kinect_rgb_optical_frame"/>
+  </include>
+</launch>

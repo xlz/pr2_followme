@@ -1,0 +1,13 @@
+<launch>
+<include file="$(find followme)/launch/kinect.launch" />
+<include file="$(find followme)/launch/pr2_2dnav.launch" />
+<include file="$(find followme)/launch/robot_pose.launch" />
+
+<node pkg="followme" type="hydro_tracker.sh" name="tracker">
+  <param name="~frame" value="/map" />
+</node>
+
+<node pkg="followme" type="follow.py" name="follow_controller" output="screen">
+  <param name="~frame" value="/map" />
+</node>
+</launch>
