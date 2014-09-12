@@ -3,6 +3,11 @@ pr2_followme
 
 A PR2 app designed for RoboCup@Home Follow-Me Challenge. See [my demo video](http://www.youtube.com/watch?v=qooZtjGAYaQ&t=786).
 
+Intel Perceptual Computing SDK recognizes voice commands to initiate actions and accept controls. After start, Point Cloud Library people module reads Kinect RGB-D data to detect people, and a custom tracker tracks people's positions. Then ROS nav stack keeps following the user while avoids obstacles, until otherwise told by voice commands.
+
+Notes
+-----
+
 This has NOT been tested for redistribution, but hopefully it should be trivial if I have not done so.
 
 This is designed to run with a ROS hydro chroot because it needs PCL 1.7, but PR2 is supported with ROS groovy.
