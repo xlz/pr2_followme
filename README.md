@@ -1,7 +1,7 @@
 pr2_followme
 ============
 
-A PR2 app designed for RoboCup@Home Follow-Me Challenge of RoboCup@Home. See [my demo video](http://www.youtube.com/watch?v=qooZtjGAYaQ&t=786).
+A PR2 app designed for RoboCup@Home Follow-Me Challenge. See [my demo video](http://www.youtube.com/watch?v=qooZtjGAYaQ&t=786).
 
 This has NOT been tested for redistribution, but hopefully it should be trivial if I have not done so.
 
@@ -15,6 +15,7 @@ TODO
 ----
 
 * Clean up by a proper ROS packaging format
+* Clean up code copyright and licensing
 * Add the starting script as the main entry point
 * Add direction of setting up ROS hydro chroot
 * Find out possible PCL patch used here
